@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OB Unit 1 - MentorsPoint Study Notes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --ink-black: #2c3e50;
+            --ink-blue: #2980b9;
+            --ink-green: #27ae60;
+            --highlight: rgba(255, 255, 0, 0.4);
+            --paper-bg: #fdfdfd;
+            --line-color: #e0eafc;
+            --margin-color: #ff9999;
+        }
+
+        body {
+            background-color: #f0f4f8;
+            font-family: 'Kalam', cursive;
+            padding: 20px;
+            color: var(--ink-black);
+        }
+
+        .notebook-page {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--paper-bg);
+            background-image: linear-gradient(var(--line-color) 1px, transparent 1px);
+            background-size: 100% 1.6rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            position: relative;
+            padding: 40px 60px 40px 80px;
+            border-left: 2px solid var(--margin-color);
+            min-height: 2000px;
+        }
+
+        .watermark {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-30deg);
+            font-size: 8rem;
+            color: rgba(41, 128, 185, 0.03);
+            pointer-events: none;
+            z-index: 1000;
+            white-space: nowrap;
+            font-family: sans-serif;
+            font-weight: 900;
+        }
+
+        h1, h2 {
+            font-family: 'Caveat', cursive;
+            font-weight: 700;
+            color: var(--ink-black);
+            border-bottom: 2px solid var(--ink-blue);
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+        .mcq-block {
+            margin-bottom: 2rem;
+            line-height: 1.6rem;
+        }
+
+        .question {
+            font-weight: 700;
+            color: var(--ink-black);
+        }
+
+        .explanation {
+            color: var(--ink-blue);
+            font-size: 0.95rem;
+            margin-top: 5px;
+            font-family: 'Caveat', cursive;
+        }
+
+        .example {
+            color: var(--ink-green);
+            font-size: 0.95rem;
+            font-style: italic;
+        }
+
+        .highlight {
+            background-color: var(--highlight);
+            padding: 2px 5px;
+            border-radius: 4px;
+        }
+
+        .diagram-container {
+            float: right;
+            width: 250px;
+            margin: 10px 0 20px 20px;
+            padding: 10px;
+            border: 1px dashed var(--ink-blue);
+            background: #fff;
+            transform: rotate(1deg);
+            text-align: center;
+        }
+
+        .diagram-title {
+            font-size: 0.8rem;
+            color: var(--ink-blue);
+            font-weight: bold;
+        }
+
+        .doodle {
+            display: inline-block;
+            margin: 5px;
+        }
+
+        .tag-mentorspoint {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            background: #2980b9;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 0 0 10px 10px;
+            font-family: sans-serif;
+            font-weight: bold;
+            font-size: 0.8rem;
+        }
+
+        @media (max-width: 768px) {
+            .notebook-page { padding: 40px 20px 40px 40px; }
+            .diagram-container { float: none; width: 100%; margin: 20px 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="watermark">MENTORSPOINT</div>
+
+    <div class="notebook-page">
+        <div class="tag-mentorspoint">MentorsPoint Academic Series</div>
+
+        <header class="mb-10 text-center">
+            <h1>Unit 1: Foundations of Organisational Behaviour</h1>
+            <p style="color: var(--ink-blue)">Topic Set 1 — Study Notes & MCQs</p>
+        </header>
+
+        <!-- INTRO SECTION -->
+        <section class="mcq-block">
+            <h2 class="text-2xl">I. Core Definition & Nature</h2>
+            
+            <div class="diagram-container">
+                <svg viewBox="0 0 200 150" width="100%">
+                    <circle cx="100" cy="40" r="30" fill="none" stroke="var(--ink-black)" stroke-width="2" />
+                    <text x="75" y="45" font-size="10">Individual</text>
+                    <path d="M100 70 L100 90" stroke="var(--ink-black)" marker-end="url(#arrow)"/>
+                    <rect x="50" y="90" width="100" height="40" fill="none" stroke="var(--ink-black)" stroke-width="2" />
+                    <text x="65" y="115" font-size="10">Organisational Goals</text>
+                </svg>
+                <div class="diagram-title">Fig 1: Focus of OB</div>
+            </div>
+
+            <p class="question">Q1. <span class="highlight">Organisational Behaviour</span> primarily studies:</p>
+            <p>A. Financial performance <br> B. Human behaviour in organisations <br> C. Production systems <br> D. Marketing strategies</p>
+            <p class="explanation">💡 Logic: OB is the study of how people act within groups/orgs to improve effectiveness.</p>
+        </section>
+
+        <section class="mcq-block">
+            <p class="question">Q2. OB is considered <span class="highlight">interdisciplinary</span> because it draws knowledge from:</p>
+            <p>A. Only psychology <br> B. Only management <br> C. Multiple behavioural sciences <br> D. Engineering sciences</p>
+            <p class="example">Eg: Using Sociology to study group power or Psychology for employee stress.</p>
+        </section>
+
+        <!-- DISCIPLINE SECTION -->
+        <section class="mcq-block">
+            <h2 class="text-2xl">II. Contributing Disciplines</h2>
+
+            <div class="diagram-container" style="background: #f9f9f9; transform: rotate(-1deg);">
+                <div class="font-bold text-xs">Venn of Disciplines</div>
+                <div class="flex justify-center space-x-1 mt-2">
+                    <div class="border p-1 text-[8px]">Psych (Self)</div>
+                    <div class="border p-1 text-[8px]">Socio (Group)</div>
+                    <div class="border p-1 text-[8px]">Anthro (Culture)</div>
+                </div>
+                <p class="text-[8px] mt-2">= Organisational Behaviour</p>
+            </div>
+
+            <p class="question">Q4. Which discipline contributes to understanding <span class="highlight">personality, learning, and motivation</span>?</p>
+            <p>A. Anthropology <br> B. Sociology <br> C. Psychology <br> D. Political science</p>
+            <p class="explanation">💡 Psychology focuses on the individual level (micro-perspective).</p>
+            
+            <p class="question">Q9. The study of <span class="highlight">organisational culture</span> is primarily influenced by:</p>
+            <p>A. Anthropology <br> B. Economics <br> C. Accounting <br> D. Engineering</p>
+            <p class="example">Eg: Understanding why a startup's culture differs from a corporate giant.</p>
+
+            <p class="question">Q10. Political science contributes to OB mainly through the study of:</p>
+            <p>A. Employee training <br> B. Power and conflict <br> C. Market trends <br> D. Financial audits</p>
+            <p class="explanation">💡 Pol-Sci helps manage <span class="highlight">organisational politics</span> & resource allocation.</p>
+        </section>
+
+        <!-- CHALLENGES SECTION -->
+        <section class="mcq-block">
+            <h2 class="text-2xl">III. Emerging Challenges (India Context)</h2>
+
+            <div class="diagram-container">
+                <p class="text-[12px] font-bold">🌍 Globalisation Impact</p>
+                <div class="text-[10px] text-left mt-2">
+                    ✅ Cultural Teams <br>
+                    ✅ 24/7 Ops <br>
+                    ✅ Communication Barriers
+                </div>
+            </div>
+
+            <p class="question">Q6. <span class="highlight">Workforce diversity</span> in India mainly refers to differences in:</p>
+            <p>A. Only age <br> B. Culture, language, gender, etc. <br> C. Salary structure <br> D. Work schedules only</p>
+            <p class="example">Eg: A team in Bangalore with members from Kerala, Punjab, and UK working together.</p>
+
+            <p class="question">Q7. Which issue has increased due to <span class="highlight">globalisation</span> in OB?</p>
+            <p>A. Reduced communication <br> B. Cultural homogeneity <br> C. Cross-cultural teamwork <br> D. Elimination of diversity</p>
+            <p class="explanation">💡 Borders are vanishing; teams are becoming more diverse.</p>
+
+            <p class="question">Q17. Emerging OB challenges due to <span class="highlight">AI and automation</span> primarily require:</p>
+            <p>A. Downsizing only <br> B. Employee reskilling <br> C. Eliminating diversity <br> D. Reduced communication</p>
+            <p class="explanation">💡 Human-centric OB focuses on adapting people to tech change.</p>
+        </section>
+
+        <!-- APPLICATION & LOGIC -->
+        <section class="mcq-block">
+            <h2 class="text-2xl">IV. Managerial Application</h2>
+
+            <p class="question">Q12. <span class="highlight">Assertion–Reason Type</span> <br>
+            <b>Assertion (A):</b> OB improves leadership effectiveness. <br>
+            <b>Reason (R):</b> OB helps understand human behaviour at work.</p>
+            <p>A. Both true, R explains A <br> B. Both true, R not explanation <br> C. A true, R false <br> D. A false, R true</p>
+            <p class="explanation">💡 Knowing 'Why' people act allows leaders to 'Guide' them better.</p>
+
+            <p class="question">Q20. Analytical MCQ: Which scenario best demonstrates <span class="highlight">OB application</span>?</p>
+            <p>A. Increasing machinery output <br> B. Studying employee motivation to reduce turnover <br> C. Changing tax policy <br> D. Purchasing raw materials</p>
+            <p class="explanation">💡 OB = People solutions, not just material or financial ones.</p>
+        </section>
+
+        <!-- QUICK REVISION TABLE -->
+        <section class="mt-10 p-5 border-2 border-dashed border-blue-400">
+            <h3 class="font-bold underline text-blue-800">🚀 Quick Discipline Mapping (Exam Cheat Sheet)</h3>
+            <div class="grid grid-cols-2 gap-4 mt-2">
+                <div class="p-2 border bg-blue-50"><b>Psychology</b> -> Personality / Motivation</div>
+                <div class="p-2 border bg-green-50"><b>Sociology</b> -> Group Dynamics / Teams</div>
+                <div class="p-2 border bg-yellow-50"><b>Anthropology</b> -> Values / Culture</div>
+                <div class="p-2 border bg-red-50"><b>Pol. Science</b> -> Power / Conflict</div>
+            </div>
+        </section>
+
+        <!-- FOOTER DOODLE -->
+        <div class="mt-20 text-center">
+            <p style="font-family: 'Caveat'; font-size: 1.5rem; color: #2c3e50;">
+                "Understanding behaviour is the key to unlocking productivity!" ✍️
+            </p>
+            <div class="mt-4 flex justify-center space-x-10 opacity-50">
+                <span>📚</span>
+                <span>💡</span>
+                <span>🤝</span>
+                <span>🎯</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
